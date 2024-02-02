@@ -1,0 +1,72 @@
+[
+  //makes zombies not spawn on first day
+  {
+    "mob": "minecraft:zombie",
+    "daycount": "lt(1)",
+    "result": "deny"
+  },
+  //removes all bad mobs other than zombies
+  {
+    "mob": [
+      "minecraft:creeper",
+      "minecraft:enderman",
+      "minecraft:skeleton",
+      "minecraft:spider",
+      "minecraft:bat",
+      "minecraft:witch",
+      "minecraft:stray",
+      "minecraft:phantom",
+      "minecraft:witch",
+      "quark:forgotten"
+    ],
+    "result": "deny"
+  },
+  {
+    "mob": [ "minecraft:zombie", "minecraft:husk", "minecraft:drowned" ],
+    "incity": true,
+    "onjoin": true,
+    "minheight": 61,
+    "random": 0.15,
+    "result": "default",
+    "armorhelmet": [
+      "minecraft:diamond_helmet"
+    ]
+  },
+  {
+    "mob": [ "minecraft:zombie", "minecraft:husk", "minecraft:drowned" ],
+    "biome": [ "minecraft:beach" ],
+    "onjoin": true,
+    "random": 0.3,
+    "result": "default",
+    "armorchest": [ "minecraft:golden_chestplate" ]
+  },
+  {
+    "mob": [ "minecraft:zombie", "minecraft:husk", "minecraft:drowned" ],
+    "biome": [ "minecraft:snowy_plains", "minecraft:snowy_taiga", "minecraft:snowy_slopes" ],
+    "onjoin": true,
+    "random": 0.3,
+    "result": "default",
+    "armorhelmet": [ "roamers:wool_helmet" ],
+    "armorchest": [ "roamers:wool_chestplate" ]
+  },
+  {
+    "mob": [ "minecraft:zombie", "minecraft:husk", "minecraft:drowned" ],
+    "biome": [
+      "minecraft:plains",
+      "minecraft:savanna",
+      "minecraft:sunflower_plains",
+      "minecraft:snowy_plains",
+      "minecraft:snowy_taiga",
+      "minecraft:grove"
+    ],
+    "incity": true,
+    "onjoin": true,
+    "minheight": 61,
+    "random": 0.1,
+    "result": "default",
+    "armorhelmet": "minecraft:leather_helmet",
+    "armorchest": "minecraft:leather_chestplate",
+    "armorlegs": "minecraft:leather_leggings",
+    "armorboots": "minecraft:leather_boots"
+  }
+]
